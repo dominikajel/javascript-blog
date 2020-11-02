@@ -37,6 +37,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
+  height: 70vh;
 }
 
 .sidebar {
@@ -52,9 +53,12 @@ body {
 .sidebar, .posts {
   background: #fff;
   margin-right: 10px;
-  padding: 40px;
   border: 1px solid #444;
   border-radius: 5px;
+}
+
+.sidebar {
+  padding: 40px;
 }
 
 /* Logo */
@@ -87,9 +91,15 @@ body {
 }
 
 /* Post */
+.posts {
+  position: relative;
+}
+
 .post {
   opacity: 0;
   transition: 0.5s ease-in-out;
+  display: block;
+  padding: 10px 20px;
   position: absolute;
 }
 
