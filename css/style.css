@@ -79,6 +79,7 @@ body {
 
 .list .active {
   font-weight: bold;
+  color: green;
 }
 
 .list-horizontal li {
