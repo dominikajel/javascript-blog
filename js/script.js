@@ -1,6 +1,6 @@
 "use strict";
 
-const { active } = require("browser-sync");
+
 
 function titleClickHandler(event) {
   event.preventDefault();
@@ -46,15 +46,11 @@ function titleClickHandler(event) {
 
 
 
-
-
-
-
 const optArticleSelector = ".post",
   optTitleSelector = ".post-title",
-  optTitleListSelector = ".titles";
-const optArticleTagsSelector = ".post-tags .list";
-const optArticleAuthorSelector = ".post-author";
+  optTitleListSelector = ".titles",
+  optArticleTagsSelector = ".post-tags .list",
+  optArticleAuthorSelector = ".post-author";
 
 function generateTitleLinks(customSelector = '') {
   /* remove contents of titleList */
@@ -128,7 +124,7 @@ function generateTags() {
   /* START LOOP: for each tag */
     for (let tag of articleTagsArray) {
     /* generate HTML of the link */
-      const linkHTML = '<li><a href="#tag-'+ tag +'">'+ tag +'</a></li>';
+      const linkHTML = '<li><a href="#tag-'+ tag +'">'+ tag +' ' + '</a></li>';
       console.log(linkHTML)
        
     /* add generated code to html variable */
