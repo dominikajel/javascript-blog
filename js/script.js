@@ -153,7 +153,7 @@ function generateTags() {
     /* END LOOP: for every article: */
   }
     
-    /* [NEW] find list of tags in right column */
+  /* [NEW] find list of tags in right column */
     const tagList = document.querySelector(".tags");
 
   /*[NEW] create variable for all links HTML code */
@@ -165,8 +165,8 @@ function generateTags() {
     /*[NEW] generate code of link and add it to allTagsHTML */
 
 
-    allTagsHTML += '<li><a href="#tag-' + tag + '">' + tag + '(' + allTags[tag] + ')</a></li>'; 
-
+    allTagsHTML += '<li><a href="#tag-' + tag + '">' + tag + '(' + allTags[tag] + ')</a></li>';
+  
   
     /* [NEW] END LOOP: for ach tag in allTags: */
   }
@@ -226,7 +226,7 @@ addClickListenersToTags();
 
 
 
-generateTags();
+// generateTags();
 
 
 /*Adding authors*/
