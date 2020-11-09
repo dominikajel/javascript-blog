@@ -198,7 +198,16 @@ function generateTags() {
 
     // allTagsHTML += '<li><a href="#tag-' + tag + '">' + tag + '(' + allTags[tag] + ')</a></li>';
 
-    const tagLinkHTML = '<li class='+ calculateTagClass(allTags[tag]), tagsParams) +'><a href="#tag-' + tag +'">' + tag + "(" + allTags[tag] + ")</a></li>';
+    const tagLinkHTML =
+      '<li class="' +
+      calculateTagClass(allTags[tag], tagsParams) +
+      '"><a href="#tag-' +
+      tag +
+      '">' +
+      tag +
+      "(" +
+      allTags[tag] +
+      ")</a></li>"; ; 
 
     allTagsHTML += tagLinkHTML;
 
