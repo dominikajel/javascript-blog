@@ -34,17 +34,20 @@ body {
 
 /* Layout */
 .wrapper {
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   height: 70vh;
 }
 
 .sidebar {
-  flex: 1 0 0;
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
 }
 
 .posts {
-  flex: 2 0 0;
+  -ms-flex: 2 0 0px;
+      flex: 2 0 0;
 }
 
 .sidebar, .posts {
@@ -108,9 +111,11 @@ body {
 
 .post-author {
   font-style: italic;
+  list-style-type: none;
 }
 
 .post-tags {
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -142,5 +147,4 @@ body {
 .list.tags li {
   display: inline-block;
 }
-
 /*# sourceMappingURL=style.css.map */
