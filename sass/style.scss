@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
 
 /* Variables */
 
 $color-light: #fff;
 $color-dark: #444;
 
-$font-logo: 'Sacramento', cursive;
-$font-header: 'Oswald', sans-serif;
-$font-text: 'Source Sans Pro', sans-serif;
+$font-logo: "Sacramento", cursive;
+$font-header: "Oswald", sans-serif;
+$font-text: "Source Sans Pro", sans-serif;
 
 /* Global */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -57,7 +59,8 @@ body {
   flex: 2 0 0;
 }
 
-.sidebar, .posts {
+.sidebar,
+.posts {
   background: $color-light;
   margin-right: 10px;
   border: 1px solid $color-dark;
@@ -65,7 +68,7 @@ body {
 }
 
 .sidebar {
-padding: 40px;
+  padding: 40px;
 }
 
 /* Logo */
@@ -117,16 +120,14 @@ padding: 40px;
   position: relative;
 }
 
-.post{
-  
+.post {
   opacity: 0;
-   transition: 0.5s ease-in-out;
-   display: block;
-   padding: 10px 20px;
-   position: absolute;
-  
-   
-    &.active {
+  transition: 0.5s ease-in-out;
+  display: block;
+  padding: 10px 20px;
+  position: absolute;
+
+  &.active {
     opacity: 1;
     z-index: 2;
   }
@@ -144,7 +145,7 @@ padding: 40px;
   }
 }
 
-/*list tags */ 
+/*list tags */
 
 .tag-size-1 {
   font-size: 100%;
